@@ -3,8 +3,7 @@ import * as React from 'react';
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, MenuItem, Avatar, Button, Tooltip, Container } from '@/app/lib/mui-material';
 // import { MenuIcon } from '@/app/lib/mui-icons';
 import MenuIcon from '@mui/icons-material/Menu';
-import Link from 'next/link';
-import "@/app/globals.css"
+import PlainLink from '../links/PlainLink';
 
 const pages = ['Projects', 'Personal', 'About'];
  
@@ -75,7 +74,7 @@ const pages = ['Projects', 'Personal', 'About'];
           </Typography>
           <Box sx={{ display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
             {pages.map((page) => (
-            <Link className='customLink' key={page} href={`/${page.toLowerCase()}`} passHref >
+            <PlainLink className='customLink' key={page} href={`/${page.toLowerCase()}`}>
                 <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -84,7 +83,7 @@ const pages = ['Projects', 'Personal', 'About'];
                 <h2>{page}</h2>
               </Button>
 
-            </Link>
+            </PlainLink>
 
             
              

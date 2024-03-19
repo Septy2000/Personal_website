@@ -37,9 +37,6 @@ const theme = createTheme({
     },
   },
 
-  // Customize spacing
-  spacing: 4, // Specify default spacing between elements
-
   // Customize breakpoints
   breakpoints: {
     values: {

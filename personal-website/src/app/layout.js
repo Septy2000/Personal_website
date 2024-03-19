@@ -1,5 +1,4 @@
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
-import Head from "next/head";
 import NavBar from "@/app/ui/components/NavBar/NavBar";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "@/app/ui/theme";
